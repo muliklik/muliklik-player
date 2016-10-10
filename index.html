@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- This title will display at the toop of your app window -->
+    <title>Muliklik Player</title>
+    <!-- Here is where we insert the compiled elm -->
+    <script type="text/javascript" src="./elm.js"></script>
+    <script>window.Elm = require('./elm.js');</script>
+  </head>
+
+  <body>
+    <div id="container">
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    elmDiv = document.getElementById('container')
+    elmApp = Elm.MuliklikPlayer.embed(elmDiv)
+  </script>
+</html>
